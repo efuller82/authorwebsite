@@ -27,19 +27,19 @@
     height: 100%;
 }
 
-#books {
+#books, #blog-home-page {
     margin-top: 5%;
     margin-left: 5%;
 }
 
 .book-card {
     width: 18rem;
-    float: left;
 }
+
 
 @media only screen and (max-width: 400px) {
     #signature {
-        font-size: 10vw;
+        font-size: 18vw;
     }
 }
 
