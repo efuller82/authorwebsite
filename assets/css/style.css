@@ -8,20 +8,46 @@
 #banner {
     max-width: 100%;
     max-height: 100%;
+    padding-top: 55px;
+}
+
+.main-row {
+    border-top: 1rem solid #430000;
 }
 
 #main-content {
-    border-right: 3px solid rgb(63, 21, 8);
-    height: 100%;
+    background-color:#6D0000; 
 }
 
 #books, #blog-home-page {
     margin-top: 5%;
     margin-left: 5%;
+    color: white;
 }
 
+
 .book-card {
-    width: 18rem;
+    width: 15rem;
+}
+
+#side-content {
+    background-color: #9B0000;
+}
+
+.social-media-icons {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.newsletter {
+    margin-top: 1em;
+    color: white;
+    margin-top: 1em;
+}
+@media only screen and (min-width: 775px){
+    #main-content {
+        border-right: 1em solid #430000;
+    }
 }
 
 
