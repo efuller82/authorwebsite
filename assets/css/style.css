@@ -1,21 +1,43 @@
+body, html {
+    height: 100%;
+    position: relative;
+    background-color: #6D0000;
+}
+
+.container-fluid {
+}
+
+.row {
+}
+
 .navbar {
     background-color: rgb(102, 9, 9) !important;
-    position: fixed;
     width: 100%;
+    padding-right: 2rem;
+    margin-left: 0 !important;
+}
+
+.top-nav {
+    position:fixed;
     z-index: 2;
 }
 
 #banner {
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
     padding-top: 55px;
 }
 
-.main-row {
-    border-top: 1rem solid #430000;
+.banner-row {
+    width: 102.5%;
 }
 
-#main-content {
+.main-row {
+    border-top: 1rem solid #430000;
+    min-height: 100vh;
+}
+
+.main-content {
     background-color:#6D0000; 
 }
 
@@ -57,16 +79,35 @@
     margin-top: 1em;
 }
 
-#page-bottom {
+.page-bottom {
     background-color: #9B0000;
     border-top: 1rem solid #430000;
-    text-align: center;
     color: white;
-    font-weight: bold;
+    position: relative;
+    width: 100%;
 }
 
+.footer-text {
+    margin: auto;
+}
+
+/* begin about page css */
+#about-main-row {
+    padding-top: 25px;
+}
+
+#about-page-profile-img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+#about-section{
+    padding: 2rem;
+}
+/* end about page css */
+
 @media only screen and (min-width: 775px){
-    #main-content {
+    .main-content {
         border-right: 1em solid #430000;
     }
 }

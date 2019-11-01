@@ -17,104 +17,114 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-sm-12">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Books</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mind Games</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark top-nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mind Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row banner-row">
+            <img src="./assets/images/banner.png" id="banner">
+        </div>
+        <div class="row main-row">
+            <div class="col-sm-9 main-content">
+                <div id="books">
+                    <h1 id="books-heading">Books</h1>
+                    <div class="card book-card">
+                        <img src='./assets/images/vts-book.png'>
+                        <div class="card-body">
+                            <h4 class="card-title">Visiting the Sins</h4>
+                            <blockquote class="blockquote mb-0 review-text-card">“Visiting the Sins is old-fashioned
+                                Southern storytelling at its hilarious,
+                                heartbreaking, poetic best.”
+                                <footer class="blockquote-footer"> Frank Mills <cite title='Source Title'>If the
+                                        Devil
+                                        Had a Wife</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card book-card">
+                        <img src='./assets/images/placeholder.jpg'>
+                        <div class="card-body">
+                            <h4 class="card-title">Your Next Book</h4>
+                            <p class="card-text review-text-card">Above is a placeholder image for your next novel, and
+                                this
+                                is some
+                                placeholder text, possibly a quote.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog-home-page">
+                    <h1 id="blog-heading">Blog</h1>
+                    <h3>Title of your most recent blog</h3>
+                    <p>Here will be some text that is either the first few lines of your most recent blog, or is a
+                        summary
+                        that you provide. You will be able to click the title of the blog and be taken to the blog post.
+                        The
+                        blog will be the heaviest lifting in this full-stack application so it may be disabled if not
+                        complete before production.</p>
+                </div>
+            </div>
+            <div class="col-sm-3" id="side-content">
+                <div class="social-media-icons">
+                    <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+                </div>
+                <div class="newsletter">
+                    <h5>Sign up for newsletter:</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="input-name" placeholder="Enter Name">
+                            <input type="email" class="form-control" id="input-email" placeholder="Enter Email">
+                        </div>
                     </form>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <img src="./assets/images/banner.png" id="banner">
-    <div class="row main-row">
-        <div class="col-sm-9" id="main-content">
-            <div id="books">
-                <h1 id="books-heading">Books</h1>
-                <div class="card book-card">
-                    <img src='./assets/images/vts-book.png'>
-                    <div class="card-body">
-                        <h4 class="card-title">Visiting the Sins</h4>
-                        <blockquote class="blockquote mb-0 review-text-card">“Visiting the Sins is old-fashioned
-                            Southern storytelling at its hilarious,
-                            heartbreaking, poetic best.”
-                            <footer class="blockquote-footer"> Frank Mills <cite title='Source Title'>If the
-                                    Devil
-                                    Had a Wife</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="card book-card">
-                    <img src='./assets/images/placeholder.jpg'>
-                    <div class="card-body">
-                        <h4 class="card-title">Your Next Book</h4>
-                        <p class="card-text review-text-card">Above is a placeholder image for your next novel, and this
-                            is some
-                            placeholder text, possibly a quote.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="blog-home-page">
-                <h1 id="blog-heading">Blog</h1>
-                <h3>Title of your most recent blog</h3>
-                <p>Here will be some text that is either the first few lines of your most recent blog, or is a summary
-                    that you provide. You will be able to click the title of the blog and be taken to the blog post. The
-                    blog will be the heaviest lifting in this full-stack application so it may be disabled if not
-                    complete before production.</p>
-            </div>
-        </div>
-        <div class="col-sm-3" id="side-content">
-            <div class="social-media-icons">
-                <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-            </div>
-            <div class="newsletter">
-                <h5>Sign up for newsletter:</h5>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="input-name" placeholder="Enter Name">
-                        <input type="email" class="form-control" id="input-email" placeholder="Enter Email">
-                    </div>
-                </form>
 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar  page-bottom">
+                    <div class="footer-text">
+                        &copy; Copyright
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <footer id="page-bottom">&copy; Copyright</footer>
-        </div>
-    </div>
-
 
     <!-- Bootstrap dependencies here, including jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
