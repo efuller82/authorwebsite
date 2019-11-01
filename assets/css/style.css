@@ -76,7 +76,7 @@ body, html {
 }
 
 .page-bottom {
-    background-color: #000000;
+    background-color: #000000 !important;
     border-top: 1rem solid #430000;
     color: white;
     position: relative;
@@ -94,18 +94,30 @@ body, html {
 }
 
 #about-page-profile-img {
-    width: 25%;
+    width: 100%;
     border-radius: 10px;
 }
 
-#about-section{
-    padding: 2rem;
+.about-heading {
+    color: white;
+    text-align: center;
+}
+
+.about-p {
+    color: white;
+    padding: 0 2em;
+    font-size: 1.5em;
 }
 /* end about page css */
 
 @media only screen and (min-width: 775px){
     .main-content {
         border-right: 1em solid #430000;
+    }
+
+    #about-page-profile-img {
+        margin-top: 15%;
+        margin-left: 10%;
     }
 }
 
