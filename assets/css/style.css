@@ -28,10 +28,6 @@ body, html {
     padding-top: 55px;
 }
 
-.banner-row {
-    width: 102.5%;
-}
-
 .main-row {
     border-top: 1rem solid #430000;
     min-height: 100vh;
@@ -80,7 +76,7 @@ body, html {
 }
 
 .page-bottom {
-    background-color: #9B0000;
+    background-color: #000000;
     border-top: 1rem solid #430000;
     color: white;
     position: relative;
@@ -94,6 +90,7 @@ body, html {
 /* begin about page css */
 #about-main-row {
     padding-top: 25px;
+    border-top: 2em solid #430000;
 }
 
 #about-page-profile-img {
