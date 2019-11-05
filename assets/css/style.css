@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
     position: relative;
-    background-color: #6D0000;
 }
 
 .container-fluid {
@@ -11,7 +10,7 @@ body, html {
 }
 
 .navbar {
-    background-color: rgb(102, 9, 9) !important;
+    background-color: #e85a4f !important;
     width: 100%;
     padding-right: 2rem;
     margin-left: 0 !important;
@@ -29,12 +28,11 @@ body, html {
 }
 
 .main-row {
-    border-top: 1rem solid #430000;
     min-height: 100vh;
 }
 
 .main-content {
-    background-color:#6D0000; 
+    background-color:#eae7dc; 
 }
 
 #books-heading {
@@ -44,13 +42,13 @@ body, html {
 #books, #blog-home-page {
     margin-top: 5%;
     margin-left: 5%;
-    color: white;
+    color: #e98074;
 }
 
 
 .book-card {
     width: 15rem;
-    color: black;
+    color: #e98074;
     float: left;
     margin-left: 10%;
     margin-bottom: 5%;
@@ -61,7 +59,7 @@ body, html {
 }
 
 #side-content {
-    background-color: #9B0000;
+    background-color: #d8c3a5;
 }
 
 .social-media-icons {
@@ -71,13 +69,13 @@ body, html {
 
 .newsletter {
     margin-top: 1em;
-    color: white;
+    color: #e98074;
     margin-top: 1em;
 }
 
 .page-bottom {
-    background-color: #000000 !important;
-    border-top: 1rem solid #430000;
+    background-color: #e85a4f !important;
+    border-top: 1rem solid #8e8d8a;
     color: white;
     position: relative;
     width: 100%;
@@ -99,12 +97,12 @@ body, html {
 }
 
 .about-heading {
-    color: white;
+    color: #e98074;
     text-align: center;
 }
 
 .about-p {
-    color: white;
+    color: #e85a4f;
     padding: 0 2em;
     font-size: 1.5em;
 }
@@ -112,7 +110,7 @@ body, html {
 
 @media only screen and (min-width: 775px){
     .main-content {
-        border-right: 1em solid #430000;
+        border-right: 1em solid #8e8d8a;
     }
 
     #about-page-profile-img {
