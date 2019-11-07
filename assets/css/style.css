@@ -12,8 +12,6 @@ body, html {
 .navbar {
     background-color: #d79922 !important;
     width: 100%;
-    padding-right: 2rem;
-    margin-left: 0 !important;
 }
 
 .top-nav {
@@ -63,14 +61,11 @@ body, html {
 }
 
 .social-media-icons {
-    text-align: center;
-    margin-top: 1em;
 }
 
 .newsletter {
-    margin-top: 1em;
-    color: #f13c20;
-    margin-top: 1em;
+    color: white;
+    margin-right: 1em;
 }
 
 .page-bottom {
@@ -108,9 +103,6 @@ body, html {
 /* end about page css */
 
 @media only screen and (min-width: 775px){
-    .main-content {
-        border-right: .3em solid #4056a1;
-    }
 
     #about-page-profile-img {
         margin-top: 15%;
