@@ -53,11 +53,6 @@ body, html {
     /* background-color:#efe2ba; */
 }
 
-#books-heading {
-    margin-bottom: 3%;
-    text-align: center;
-    color: #4056a1;
-}
 
 #books, #blog-home-page {
     /* margin-top: 5%;
@@ -66,84 +61,10 @@ body, html {
     color: gray;
 }
 
-
-.book-card {
-    width: 15rem;
-    color: #f13c20;
-    float: left;
-    margin-left: 10%;
-    margin-bottom: 5%;
-}
-
-#blog-home-page {
-    clear: both;
-}
-
-#side-content {
-    background-color: #efe2ba;
-}
-
 .social-media-icons {
     margin: auto;
 }
 
-.newsletter {
-    color: #4056a1;
-    margin-right: 1em;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.sign-up-div {
-    margin: auto;
-}
-
-#input-email {
-    margin-right: .3em;
-}
-
-.btn-primary {
-    background-color: #4056a1 !important;
-}
-
-.sign-up {
-    margin-top: .5em;
-    margin: .5em auto;
-}
-
-.page-bottom {
-    background-color: #4056a1 !important;
-    border-top: .3rem solid #4056a1;
-    color: white;
-    position: relative;
-    width: 100%;
-}
-
-.footer-text {
-    margin: auto;
-}
-
-/* begin about page css */
-#about-main-row {
-    padding-top: 25px;
-}
-
-#about-page-profile-img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.about-heading {
-    color: #e98074;
-    text-align: center;
-}
-
-.about-p {
-    color: #4056a1;
-    padding: 0 2em;
-    font-size: 1.5em;
-}
-/* end about page css */
 
 @media only screen and (min-width: 775px){
     #about-page-profile-img {
