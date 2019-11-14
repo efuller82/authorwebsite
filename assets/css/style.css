@@ -6,15 +6,12 @@ body, html {
 .navbar {
     background-color: white !important;
     width: 100%;
+    padding-right: 1em;
 }
 
 .top-nav {
     position:fixed;
     z-index: 2;
-}
-
-.navbar-nav {
-    margin:auto;
 }
 
 .picture-nav {
@@ -49,22 +46,14 @@ body, html {
     min-height: 100vh;
 }
 
-.main-content {
-    /* background-color:#efe2ba; */
-}
-
-
-#books, #blog-home-page {
-    /* margin-top: 5%;
-    margin-left: 5%; */
-    /* color: #f13c20; */
-    color: gray;
-}
-
 .social-media-icons {
     margin: auto;
 }
 
+#qotd {
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+}
 
 @media only screen and (min-width: 775px){
     #about-page-profile-img {
