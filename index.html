@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark top-nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +27,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <h1 class="name-heading">Melanie Denman</h1>
+                <div class="social-media-icons">
+                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </div>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home |<span class="sr-only">(current)</span></a>
@@ -47,72 +51,25 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-            </div>
 
-            <div class="social-media-icons">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
             </div>
         </nav>
-        <div class="row first-row">
-            <div class="col-6 name-heading-column">
+        <div class="row picture-nav">
+            <div class="col">
+                <img src="./assets/images/profile-closeup-large-small.jpg" class="nav-icons" alt="picture of Melanie">
             </div>
-            <div class="col-6" id="pic-column-home">
-                <img src="./assets/images/profile-blck-shrt.jpg" alt="Melanie Denman in a black shirt"
-                    id="home-profile-img">
+            <div class="col">
+                <img src="./assets/images/books-web-small.jpg" class="nav-icons" alt="old books">
             </div>
-        </div>
-        <div class="row main-row">
-            <div class="col-sm-12 main-content">
-                <form class="form-inline sign-up">
-                    <div class="form-group sign-up-div">
-                        <input type="email" class="form-control" id="input-email" placeholder="Newsletter Sign-up">
-                        <input class="btn btn-primary btn-sm" type="submit" value="Submit">
-                    </div>
-                </form>
-                <div id="books">
-                    <h1 id="books-heading">Books</h1>
-                    <div class="card book-card">
-                        <img src='./assets/images/vts-book.png'>
-                        <div class="card-body">
-                            <h4 class="card-title">Visiting the Sins</h4>
-                            <blockquote class="blockquote mb-0 review-text-card">“Visiting the Sins is old-fashioned
-                                Southern storytelling at its hilarious,
-                                heartbreaking, poetic best.”
-                                <footer class="blockquote-footer"> Frank Mills <cite title='Source Title'>If the
-                                        Devil
-                                        Had a Wife</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="card book-card">
-                        <img src='./assets/images/placeholder.jpg'>
-                        <div class="card-body">
-                            <h4 class="card-title">Your Next Book</h4>
-                            <p class="card-text review-text-card">Above is a placeholder image for your next novel, and
-                                this
-                                is some
-                                placeholder text, possibly a quote.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="blog-home-page">
-                    <h1 id="blog-heading">Blog</h1>
-                    <h3>Title of your most recent blog</h3>
-                    <p>Here will be some text that is either the first few lines of your most recent blog, or is a
-                        summary
-                        that you provide. You will be able to click the title of the blog and be taken to the blog post.
-                        The
-                        blog will be the heaviest lifting in this full-stack application so it may be disabled if not
-                        complete before production.</p>
-                </div>
+            <div class="col">
+                <img src="./assets/images/blog-web.jpeg-small.jpg" class="nav-icons" alt="pen and pager">
             </div>
-        </div>
-    </div>
-    <div class="navbar page-bottom">
-        <div class="footer-text">
-            &copy; Copyright
+            <div class="col">
+                <img src="./assets/images/mind-games-web-small.jpg" class="nav-icons" alt="daVinci drawing">
+            </div>
+            <div class="col">
+                <img src="./assets/images/contact-web-small.jpg" class="nav-icons" alt="old school phone">
+            </div>
         </div>
     </div>
 
