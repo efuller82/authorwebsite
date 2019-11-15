@@ -29,14 +29,14 @@
             <h1 class="name-heading">Melanie Denman</h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="books.html">Books</a>
+                        <a class="nav-link active" href="books.html">Books</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -52,37 +52,35 @@
                 <a href="mailto:melina732@yahoo.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
             </div>
         </nav>
-        <div class="row picture-nav">
+
+        <div class="row" id="books-main-row">
             <div class="col">
-                <div class="nav-icons-container">
-                    <a href="/about.html"><img src="./assets/images/profile-closeup-large-small-text2.png"
-                            class="nav-icons" alt="picture of Melanie"></a>
+                <h1>Books</h1>
+            </div>
+        </div>
+        <div class="row" id="books-vts-row">
+            <div class="col-md-3 col-sm-12">
+                <div class="card">
+                    <img src="./assets/images/vts-book.png" class="card-img-top book-image"
+                        alt="book cover with woman covering one breast and presenting apple">
+                    <a href="https://www.amazon.com/Visiting-Sins-Melanie-Denman-ebook/dp/B00GUSBEHO/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Visiting+The+Sins&qid=1573823982&s=books&sr=1-1"
+                        class="btn btn-success btn-buy">Buy on Amazon</a>
                 </div>
             </div>
-            <div class="col">
-                <img src="./assets/images/books-web-small-text2.png" class="nav-icons" alt="old books">
-            </div>
-            <div class="col">
-                <img src="./assets/images/quill-web-small-text.png" class="nav-icons" alt="quill">
-
-            </div>
-            <div class="col">
-                <img src="./assets/images/old-light-bulb-web-small-text.png" class="nav-icons" alt="old light bulb">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <blockquote class="blockquote" id="blockqotd">
-                    <p class="mb-0" id="qotd">Here there will be a random quote of the day. It is functional but
-                        currently disabled because there are limits on its uses before charging. But totally worth it,
-                        unless we want to make our own API.</p>
-                    <footer class="blockquote-footer" id="qotd-author">Eric Fuller</footer>
-                </blockquote>
+            <div class="col-md-9 col-sm-12">
+                <h2>Visiting the Sins</h2>
+                <p class="lead">Urna duis convallis convallis tellus. Suscipit adipiscing bibendum est ultricies. Ipsum
+                    a arcu cursus vitae congue mauris rhoncus aenean vel. Ipsum a arcu cursus vitae congue mauris
+                    rhoncus aenean vel.</p>
+                <p class="lead">Turpis in eu mi bibendum neque egestas congue quisque egestas. Facilisis volutpat est
+                    velit egestas dui id ornare arcu odio. Commodo quis imperdiet massa tincidunt.</p>
+                <p class="lead">Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Posuere
+                    sollicitudin aliquam ultrices sagittis orci a. Sapien eget mi proin sed libero enim sed faucibus.
+                </p>
             </div>
         </div>
+
     </div>
-
     <!-- Bootstrap dependencies here, including jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -92,8 +90,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./assets/js/config.js"></script>
-    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 </html>

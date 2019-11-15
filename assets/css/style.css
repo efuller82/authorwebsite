@@ -48,10 +48,15 @@
     font-family: 'Special Elite', cursive;
     font-size: 25px;
 }
+#about-profile-col {
+    margin-top: 10%;
+}
+
 
 #about-page-profile-img {
     border: solid 3px #d8c3a5;
-    border-radius: 5%;;
+    border-radius: 5%;
+    width: 100%;
 }
 
 .about-heading {
@@ -66,23 +71,36 @@
     text-align: center;
 }
 
+.book-image {
+    width: 100%;
+}
+
+.btn-buy {
+    width: 75%;
+    margin: 3% auto;
+}
+
 
 @media only screen and (min-width: 775px){
+    #blockqotd {
+        margin-top: 5%;
+    }
+    
     #about-page-profile-img {
         width: 100%;
     }
 
-    #blockqotd {
-        margin-top: 5%;
-    }
 
     #about-profile-col, #about-text-col {
         margin-top: 10%;
     }
 
-    #contact-card {
-        width: 75%;
-        margin: 5% auto;
+    #books-main-row {
+        margin-top: 5%;
+    }
+
+    #books-vts-row {
+        margin-top: 3%;
     }
 
 }
