@@ -1,26 +1,16 @@
-body, html {
-    height: 100%;
-    position: relative;
-}
-
 .navbar {
     background-color: white !important;
     width: 100%;
-    padding-right: 1em;
-}
-
-.top-nav {
-    position:fixed;
-    z-index: 2;
+    /* padding-right: 1em; */
 }
 
 .picture-nav {
-    padding-top: 55px;
     text-align: center;
+    margin-top: 3em;
 }
 
 .nav-icons {
-    max-width: 200px;
+    max-width: 150px;
     margin: 1em;
 }
 
@@ -30,7 +20,7 @@ body, html {
 
 .name-heading {
     font-family: 'Dancing Script', cursive;
-    color: #efe2ba;
+    color: #e85a4f;
 }
 
 #pic-column-home {
@@ -42,9 +32,6 @@ body, html {
     border-radius: 15%;
     margin-top: 5%;
 }
-.main-row {
-    min-height: 100vh;
-}
 
 .social-media-icons {
     margin: auto;
@@ -55,10 +42,26 @@ body, html {
     font-size: 25px;
 }
 
+#about-page-profile-img {
+    border: solid 3px #d8c3a5;
+    border-radius: 5%;;
+}
+
+.about-heading {
+    color: #e85a4f;
+}
+
+.about-p {
+    color: #8e8d8a;
+}
+
 @media only screen and (min-width: 775px){
     #about-page-profile-img {
-        margin-top: 15%;
-        margin-left: 10%;
+        width: 100%;
+    }
+
+    #about-profile-col, #about-text-col {
+        margin-top: 10%;
     }
 }
 

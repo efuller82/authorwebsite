@@ -14,85 +14,62 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- My Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark top-nav">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <h1 class="name-heading">Melanie Denman</h1>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home |</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="about.html">About |<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Books |</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog |</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Mind Games |</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact |</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
-<div class="container-fluid">
-    <div class="row main-row" id="about-main-row">
-        <div class="col-sm-9 main-content">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <img src="./assets/images/profile-blck-shrt.jpg" id="about-page-profile-img">
-                </div>
-                <div class="col-xs-12 col-md-8">
-                    <section class="about-melanie">
-                        <h1 class="about-heading">About the Author</h1>
-                        <p class="about-p">Melanie Denman is a native East Texan and a former banker. She currently
-                            lives with her
-                            family in the San Francisco Bay Area, where she is working on a second novel.</p>
-                        <p class="about-p">Can you give me more here? I possibly would like to change some heading font
-                            colors, but some more and updated content would be good.</p>
-                        <p class="about-p">This page feels a bit nude. What else can we do here?</p>
-                        <p class="about-p">Notice how on a larger screen, you have pic on the left and text on the
-                            right, and on small screens the pic is on top and the text is on bottom. This is called
-                            mobile responsive. :)</p>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3" id="side-content">
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark top-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <h1 class="name-heading">Melanie Denman</h1>
             <div class="social-media-icons">
-                <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
             </div>
-            <div class="newsletter">
-                <h5>Sign up for newsletter:</h5>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="input-name" placeholder="Enter Name">
-                        <input type="email" class="form-control" id="input-email" placeholder="Enter Email">
-                    </div>
-                </form>
-
-            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About |<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Books |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mind Games |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact |</a>
+                </li>
+            </ul>
         </div>
-    </div>
-</div>
-<div class="navbar fixed-bottom page-bottom">
-    <div class="footer-text">&copy; Copyright
-
+    </nav>
+    <div class="row main-row">
+        <div class="col-xs-12 col-md-4" id="about-profile-col">
+            <img src="./assets/images/profile-blck-shrt.jpg" id="about-page-profile-img">
+        </div>
+        <div class="col-xs-12 col-md-8" id="about-text-col">
+            <section class="about-melanie">
+                <h1 class="about-heading">About</h1>
+                <p class="about-p">Melanie Denman is a native East Texan and a former banker. She currently
+                    lives with her
+                    family in the San Francisco Bay Area, where she is working on a second novel.</p>
+                <p class="about-p">Can you give me more here? I possibly would like to change some heading font
+                    colors, but some more and updated content would be good.</p>
+                <p class="about-p">This page feels a bit nude. What else can we do here?</p>
+                <p class="about-p">Notice how on a larger screen, you have pic on the left and text on the
+                    right, and on small screens the pic is on top and the text is on bottom. This is called
+                    mobile responsive. :)</p>
+            </section>
+        </div>
     </div>
 </div>
 <!-- Bootstrap dependencies here, including jquery-->
