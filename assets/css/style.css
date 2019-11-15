@@ -1,7 +1,14 @@
 .navbar {
-    background-color: white !important;
+    background-color: #eae7dc !important;
     width: 100%;
-    /* padding-right: 1em; */
+}
+
+.navbar-nav {
+    margin: auto !important;
+}
+
+.fa-envelope, .fa-facebook-official, .fa-instagram {
+    color: #8e8d8a;
 }
 
 .picture-nav {
@@ -55,14 +62,29 @@
     color: #8e8d8a;
 }
 
+#contact-card-title {
+    text-align: center;
+}
+
+
 @media only screen and (min-width: 775px){
     #about-page-profile-img {
         width: 100%;
     }
 
+    #blockqotd {
+        margin-top: 5%;
+    }
+
     #about-profile-col, #about-text-col {
         margin-top: 10%;
     }
+
+    #contact-card {
+        width: 75%;
+        margin: 5% auto;
+    }
+
 }
 
 
