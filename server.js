@@ -1,8 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
-//when needed
+// when needed
 // const passport = require('passport');
-
 
 const app = express();
 
@@ -10,9 +9,10 @@ const app = express();
 const db = require('./config/keys').MongoURI;
 
 // Connect to Mongo
-mongoose.connect(db, { useNewUrlParser: true })
-    .then(() => console.log('MongoDB Connected...'))
-    .catch(err => console.log(err));
+mongoose
+  .connect(db, { useNewUrlParser: true })
+  .then(() => console.log('MongoDB Connected...'))
+  .catch(err => console.log(err));
 
 // Bodyparser
 app.use(express.urlencoded({ extended: true }));
