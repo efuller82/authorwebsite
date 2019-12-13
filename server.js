@@ -22,6 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 // app.use(passport.session());
 
 // Routes
+app.use('/', require('./routes/index'));
+app.use('/blogs', require('./routes/blogs.js'));
 
 const PORT = process.env.PORT || 5000;
 

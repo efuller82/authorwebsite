@@ -1,0 +1,27 @@
+{
+  "name": "authorwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "eslint": "^6.7.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.0",
+    "passport": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efuller82/authorwebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efuller82/authorwebsite/issues"
+  },
+  "homepage": "https://github.com/efuller82/authorwebsite#readme"
+}
