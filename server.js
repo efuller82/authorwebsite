@@ -21,8 +21,11 @@ app.use(express.urlencoded({ extended: true }));
 // app.use(passport.initialize());
 // app.use(passport.session());
 
+// middleware so public folder can be used :)
+app.use(express.static('public'));
+
 // Routes
-app.use('/', require('./routes/index'));
+require('./routes/html-routes.js')(app);
 app.use('/blogs', require('./routes/blogs.js'));
 
 const PORT = process.env.PORT || 5000;
