@@ -27,4 +27,12 @@ router.get('/all', (req, res) => {
   });
 });
 
+//! trying delete route for blogs
+router.delete('/all/:id', function(req, res) {
+  Blog.findById({ _id: req.params.id })
+    .then(dbModel => dbModel.remove())
+    .then(dbModel => res.json(dbModel))
+    .catch(err => res.status(422).json(err));
+});
+
 module.exports = router;

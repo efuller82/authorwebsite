@@ -13,6 +13,8 @@ $(document).ready(function() {
   //     });
 });
 
+// ! clicking button multiple times causes blogs to render multiple times on page; need to fix
+// This button shows the blogs on bottom of author.html page
 $('.get-blogs').click(function() {
   const settings = {
     async: true,
@@ -26,10 +28,12 @@ $('.get-blogs').click(function() {
       const blogCategory = `<div>Category: ${blog.category}</div>`;
       const blogTitle = `<div>Title: ${blog.title}</div>`;
       const blogContent = `<div>Content: ${blog.content}</div>`;
-
       $(
         '<div class="results card">' +
           blogDate +
+          '<button class="btn btn-danger btn-small delete-btn">' +
+          'X' +
+          '</button>' +
           blogCategory +
           blogTitle +
           blogContent +
@@ -37,4 +41,20 @@ $('.get-blogs').click(function() {
       ).appendTo('.blog-posts');
     });
   });
+});
+
+// delete blog function
+function deleteBlogPost() {
+  const id = $(this).data('id');
+  $.ajax({
+    method: 'DELETE',
+    url: '/blogs/all/' + id,
+  }).then(alert('function run'));
+}
+
+//! not working; on refresh i get the alert
+// click event for deleting blog post
+$('.blog-posts').on('click', '.delete-btn', function() {
+  alert('you clicked');
+  deleteBlogPost();
 });
