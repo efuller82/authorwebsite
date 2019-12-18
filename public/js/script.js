@@ -24,6 +24,7 @@ $('.get-blogs').click(function() {
   $.ajax(settings).done(function(response) {
     // console.log(response);
     response.forEach(function(blog) {
+      const blogId = blog._id;
       const blogDate = `<div>Date: ${blog.date}</div>`;
       const blogCategory = `<div>Category: ${blog.category}</div>`;
       const blogTitle = `<div>Title: ${blog.title}</div>`;
@@ -31,7 +32,9 @@ $('.get-blogs').click(function() {
       $(
         '<div class="results card">' +
           blogDate +
-          '<button class="btn btn-danger btn-small delete-btn">' +
+          '<button class="btn btn-danger btn-small delete-btn" data-' +
+          blogId +
+          '>' +
           'X' +
           '</button>' +
           blogCategory +
@@ -45,10 +48,9 @@ $('.get-blogs').click(function() {
 
 // delete blog function
 function deleteBlogPost() {
-  const id = $(this).data('id');
   $.ajax({
     method: 'DELETE',
-    url: '/blogs/all/' + id,
+    url: 'blogs/all/:_id',
   }).then(alert('function run'));
 }
 

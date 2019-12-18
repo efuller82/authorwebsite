@@ -1,6 +1,7 @@
 {
   "extends": ["wesbos"],
   "rules": {
-    "prefer-template": "off"
+    "prefer-template": "off",
+    "prefer-destructuring": "off"
   }
 }
