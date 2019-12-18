@@ -32,7 +32,7 @@ $('.get-blogs').click(function() {
       $(
         '<div class="results card">' +
           blogDate +
-          '<button class="btn btn-danger btn-small delete-btn" data-' +
+          '<button class="btn btn-danger btn-small delete-btn" data-id=' +
           blogId +
           '>' +
           'X' +
@@ -46,17 +46,13 @@ $('.get-blogs').click(function() {
   });
 });
 
-// delete blog function
-function deleteBlogPost() {
-  $.ajax({
-    method: 'DELETE',
-    url: 'blogs/all/:_id',
-  }).then(alert('function run'));
-}
-
 //! not working; on refresh i get the alert
 // click event for deleting blog post
 $('.blog-posts').on('click', '.delete-btn', function() {
-  alert('you clicked');
-  deleteBlogPost();
+  const id = this.dataset.id;
+  console.log(id);
+  $.ajax({
+    method: 'DELETE',
+    url: '/blogs/all/' + id,
+  }).then(console.log('done'));
 });
